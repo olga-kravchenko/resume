@@ -1,0 +1,58 @@
+.competency--list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 27px 29px 25px 68px;
+}
+
+.item--name {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.item--description {
+  margin-top: 4px;
+}
+
+.item--name {
+  position: relative;
+
+  &__html::before,
+  &__css::before,
+  &__js::before,
+  &__jquery::before,
+  &__figma::before,
+  &__git::before {
+    position: absolute;
+    left: -38px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $yellow;
+  }
+
+  &__html::before {
+   content: "01";
+  }
+
+  &__css::before {
+    content: "02";
+  }
+
+  &__js::before {
+    content: "03";
+  }
+
+  &__jquery::before {
+    content: "04";
+  }
+
+  &__figma::before {
+    content: "05";
+  }
+
+  &__git::before {
+    content: "06";
+  }
+}

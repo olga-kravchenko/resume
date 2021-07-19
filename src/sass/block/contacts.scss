@@ -1,0 +1,42 @@
+.contacts--container {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 29px 31px 24px;
+  margin: 0 auto;
+  width: 320px;
+}
+
+.contacts--text {
+  position: relative;
+  padding-left: 37px;
+
+  &__place::before,
+  &__phone::before,
+  &__mail::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__place::before {
+    width: 13px;
+    height: 20px;
+    background-image: url("../../img/place__icon.svg");
+  }
+
+  &__phone::before {
+    width: 17px;
+    height: 18px;
+    background-image: url("../../img/phone__icon.svg");
+  }
+
+  &__mail::before {
+    width: 19px;
+    height: 14px;
+    background-image: url("../../img/mail__icon.svg");
+  }
+}

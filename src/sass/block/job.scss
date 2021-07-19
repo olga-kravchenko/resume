@@ -1,0 +1,24 @@
+.job--period {
+  font-size: 10px;
+}
+
+.job--duties {
+  padding: 6px 7px 6px 4px;
+  font-size: 12px;
+  line-height: 14px;
+  list-style: disc;
+}
+
+.job {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -54px;
+    width: 27px;
+    height: 27px;
+    background-image: url("../../img/job__icon.svg");
+  }
+}

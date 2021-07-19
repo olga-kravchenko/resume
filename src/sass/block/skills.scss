@@ -1,0 +1,20 @@
+.skills--container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 11px 30px 13px;
+}
+
+.skills--subtitle {
+  text-align: center;
+}
+
+.skills--list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 9px;
+  margin-top: 16px;
+}

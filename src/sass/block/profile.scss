@@ -1,0 +1,17 @@
+.profile {
+  display: block;
+  margin: 0 auto;
+  padding: 23px 22px 31px 22px;
+  text-align: center;
+}
+
+.profile--name {
+  margin-top: 8px;
+  font-size: 24px;
+  color: $yellow;
+}
+
+.profile--vacancy {
+  margin-top: 9px;
+  font-size: 18px;
+}

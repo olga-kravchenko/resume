@@ -1,0 +1,32 @@
+.institution--period {
+  font-size: 10px;
+}
+
+.institution--specialization {
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+.institution {
+  position: relative;
+
+  &__university::before,
+  &__courses::before{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -47px;
+  }
+
+  &__university::before {
+    width: 27px;
+    height: 24px;
+    background-image: url("../../img/university__icon.svg");
+  }
+
+  &__courses::before {
+    width: 27px;
+    height: 27px;
+    background-image: url("../../img/courses__icon.svg");
+  }
+}
