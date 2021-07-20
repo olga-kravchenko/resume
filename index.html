@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olga Kravchenko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<header class="main-info">
+    <section class="main-info--profile profile">
+        <picture>
+            <source media="(min-width: 1220px)" srcset="img/photo__desktop@1x.png 1x, img/photo__desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/photo__tablet@1x.png 1x, img/photo__tablet@2x.png 2x">
+            <img class="profile--photo" src="img/photo__mobile@1x.png" srcset="img/photo__mobile@2x.png 2x" width="162" height="161" alt="Olga Kravchenko">
+        </picture>
+        <div class="profile--text">
+            <h1 class="profile--name">Olga Kravchenko</h1>
+            <h2 class="profile--vacancy">Frontend-developer</h2>
+        </div>
+        <section class="main-info--contacts contacts">
+            <h3 class="contacts--tittle title">Contacts</h3>
+            <div class="contacts--container">
+                <p class="contacts--text contacts--text__place">Belarus, Minsk</p>
+                <p class="contacts--text contacts--text__phone">+375 (29) 719-86-27</p>
+                <p class="contacts--text contacts--text__mail">olga.kravchenko97@yandex.by</p>
+            </div>
+        </section>
+    </section>
+</header>
+<main>
+    <section class="intro">
+        <h3 class="intro--tittle title">Intro</h3>
+        <div class="intro--text">
+            <p>
+                Hi! My name is Olga.<br>
+                I am from a small town, I have been living in Minsk for several years.<br>
+                I studied at the university as a web designer. I worked as a web designer for several years.
+            </p>
+            <p>
+                Then I fell in love with frontend-development. Now I make adaptive websites, use Flexi, Grids, BEM,
+                SASS,
+                Webpack
+                and other technologies in my work. I am actively studying new information in the field of frontend
+                development.
+            </p>
+            <p>
+                I am really love HTML, CSS, JS. Welcome to my website!
+            </p>
+        </div>
+    </section>
+    <section class="competency">
+        <h3 class="competency--tittle title">Competency</h3>
+        <ol class="competency--list reset-list">
+            <li class="competency--item">
+                <h4 class="competency--name competency--name__html">HTML</h4>
+                <p class="competency--description">
+                    Creating an adaptive cross-browser and accessible layout (Flex, Grid, BEM).
+                </p>
+            </li>
+            <li class="competency--item">
+                <h4 class="competency--name competency--name__css">CSS</h4>
+                <p class="competency--description">
+                    Using pure CSS, as well as the SASS preprocessor (enclosure, variables, heritability).
+                </p>
+            </li>
+            <li class="competency--item">
+                <h4 class="competency--name competency--name__js">JavaScript</h4>
+                <p class="competency--description">
+                    CRUD operations on the DOM, working with the ajax, using event listeners.
+                </p>
+            </li>
+            <li class="competency--item">
+                <h4 class="competency--name competency--name__jquery">jQuery</h4>
+                <p class="competency--description">
+                    CRUD operations on the DOM, working with animation.
+                </p>
+            </li>
+            <li class="competency--item">
+                <h4 class="competency--name competency--name__figma">Figma&Photoshop</h4>
+                <p class="competency--description">
+                    Working with the design layout, as well as creating a new design. Using a style guide.
+                </p>
+            </li>
+            <li class="competency--item">
+                <h4 class="competency--name competency--name__git">Git</h4>
+                <p class="competency--description">
+                    Working in the console, creating a repository, and handling conflicts.
+                </p>
+            </li>
+        </ol>
+    </section>
+    <section class="experience">
+        <h3 class="experience--tittle title">Experience</h3>
+        <ol class="experience--list jobs reset-list">
+            <li class="jobs--item job">
+                <p class="job--period">January 2019 - present</p>
+                <h4 class="job--name">B2Bprint</h4>
+                <p class="job--vocation">Frontend-developer</p>
+                <ul class="job--duties reset-list">
+                    <li>Website Coding(Figma).</li>
+                    <li>Edit existing site pages.</li>
+                    <li>Creating an adaptive cross-browser and accessible layout.</li>
+                    <li>BEM, HTML, Css, JS, jQuery.</li>
+                </ul>
+            </li>
+            <li class="jobs--item job">
+                <p class="job--period">February 2017 - December 2018</p>
+                <h4 class="job--name">EPAM Systems Inc (Belarus)</h4>
+                <p class="job--vocation">UX/UI Designer</p>
+                <ul class="job--duties reset-list">
+                    <li>Designing interface design in FIGMA.</li>
+                    <li>Creating site prototypes, User Flow, Style Guide.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+    <section class="skills">
+        <h3 class="skills--tittle title">Skills</h3>
+        <div class="skills--container">
+            <div>
+                <p class="skills--subtitle">Hard</p>
+                <ul class="skills--list reset-list">
+                    <li class="skills--item skills--item__html">
+                        <label>HTML
+                            <input type="range" value="9" min="0" max="10" disabled>
+                        </label>
+                    </li>
+                    <li class="skills--item skills--item__css">
+                        <label>CSS/SASS
+                            <input type="range" value="8" min="0" max="10" disabled>
+                        </label>
+                    </li>
+                    <li class="skills--item skills--item__js">
+                        <label>JavaScript/jQuery
+                            <input type="range" value="8" min="0" max="10" disabled>
+                        </label>
+                    </li>
+                    <li class="skills--item skills--item__webpack">
+                        <label>Webpack/Gulp
+                            <input type="range" value="7" min="0" max="10" disabled>
+                        </label>
+                    </li>
+                    <li class="skills--item skills--item__figma">
+                        <label>Figma/Photoshop
+                            <input type="range" value="10" min="0" max="10" disabled>
+                        </label>
+                    </li>
+                    <li class="skills--item skills--item__git">
+                        <label>Git
+                            <input type="range" value="8" min="0" max="10" disabled>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p class="skills--subtitle">Soft</p>
+                <ul class="skills--list reset-list">
+                    <li class="skills--item skills--item__learning">
+                        <label>Learning ability
+                            <input type="range" value="9" min="0" max="10" disabled>
+                        </label>
+                    </li>
+                    <li class="skills--item skills--item__time">
+                        <label>Time management
+                            <input type="range" value="9" min="0" max="10" disabled>
+                        </label>
+                    </li>
+                    <li class="skills--item skills--item__stress">
+                        <label>Stress resistance
+                            <input type="range" value="7" min="0" max="10" disabled>
+                        </label>
+                    </li>
+                    <li class="skills--item skills--item__teamwork">
+                        <label>Teamwork
+                            <input type="range" value="9" min="0" max="10" disabled>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="education">
+        <h3 class="education--tittle title">Education</h3>
+        <div class="education--container">
+            <div>
+                <p class="education--subtitle">University</p>
+                <ol class="education--list reset-list">
+                    <li class="education--institution institution institution__university">
+                        <p class="institution--period">2014 - 2019</p>
+                        <h4 class="institution--name">Belarusian State University</h4>
+                        <p class="institution--specialization">Information technology and design</p>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <p class="education--subtitle">Courses</p>
+                <ol class="education--list reset-list">
+                    <li class="education--institution institution institution__courses">
+                        <p class="institution--period">2018</p>
+                        <h4 class="institution--name">HTMLAcademy</h4>
+                        <p class="institution--specialization">Frontend-developer</p>
+                    </li>
+                    <li class="education--institution institution institution__courses">
+                        <p class="institution--period">2017</p>
+                        <h4 class="institution--name">EPAM</h4>
+                        <p class="institution--specialization">UX Designer</p>
+                    </li>
+                    <li class="education--institution institution institution__courses">
+                        <p class="institution--period">2016</p>
+                        <h4 class="institution--name">IT-Academy</h4>
+                        <p class="institution--specialization">UX/UI Designer</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="gratitude">
+    <h3 class="gratitude--tittle title">Thank you for your attention.</h3>
+</footer>
+<script src="bundle.js"></script>
+</body>
+</html>
