@@ -4,19 +4,23 @@
   gap: 23px;
   width: 320px;
   margin: 0 auto;
-  padding: 27px 29px 25px 68px;
+  padding: 27px 29px 25px 27px;
 }
 
-.item--name {
+.competency--item {
+  padding-left: 41px;
+}
+
+.competency--name {
   font-weight: 500;
   font-size: 16px;
 }
 
-.item--description {
+.competency--description {
   margin-top: 4px;
 }
 
-.item--name {
+.competency--name {
   position: relative;
 
   &__html::before,
@@ -33,7 +37,7 @@
   }
 
   &__html::before {
-   content: "01";
+    content: "01";
   }
 
   &__css::before {
@@ -54,5 +58,59 @@
 
   &__git::before {
     content: "06";
+  }
+}
+
+@media (min-width: 768px) {
+  .competency {
+    display: grid;
+    grid-template-columns: 238px 1fr;
+    margin: 0 auto;
+  }
+
+  .competency--list {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 27px;
+    width: auto;
+    padding: 2px 35px 28px 35px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1220px) {
+  .competency {
+    grid-template-columns: 464px 1fr;
+  }
+
+  .competency--list {
+    row-gap: 50px;
+    column-gap: 32px;
+    padding: 0 40px 79px 49px;
+  }
+
+  .competency--item {
+    padding-left: 47px;
+  }
+
+  .competency--name {
+    font-size: 22px;
+
+    &__html::before,
+    &__css::before,
+    &__js::before,
+    &__jquery::before,
+    &__figma::before,
+    &__git::before {
+      left: -44px;
+    }
+  }
+
+  .competency--description {
+    margin-top: 7px;
+    line-height: 19px;
+    font-size: 16px;
   }
 }

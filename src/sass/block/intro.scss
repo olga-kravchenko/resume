@@ -1,10 +1,40 @@
 .intro--text {
   display: flex;
-  width: 320px;
   flex-direction: column;
   gap: 14px;
+  width: 320px;
   margin: 0 auto;
   padding: 27px 29px 39px;
   font-size: 12px;
   line-height: 14px;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 238px 1fr;
+    margin: 0 auto;
+  }
+
+  .intro--text {
+    width: auto;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    padding: 0 37px 48px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .intro {
+    grid-template-columns: 464px 1fr;
+  }
+
+  .intro--text {
+    gap: 22px;
+    padding: 0 65px 67px 51px;
+    font-size: 18px;
+    line-height: 20px;
+  }
 }

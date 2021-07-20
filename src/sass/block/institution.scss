@@ -9,13 +9,15 @@
 
 .institution {
   position: relative;
+  padding-left: 48px;
 
   &__university::before,
   &__courses::before{
     content: "";
     position: absolute;
-    top: 3px;
-    left: -47px;
+    top: 4px;
+    left: 4px;
+    background-repeat: no-repeat;
   }
 
   &__university::before {
@@ -28,5 +30,85 @@
     width: 27px;
     height: 27px;
     background-image: url("../../img/courses__icon.svg");
+  }
+}
+
+@media (min-width: 768px) {
+  .institution--period {
+    font-size: 13px;
+  }
+
+  .institution--specialization {
+    margin-top: 9px;
+  }
+
+  .institution--name {
+    margin-top: 1px;
+    font-size: 17px;
+  }
+
+  .institution {
+    padding-left: 53px;
+
+    &__university::before,
+    &__courses::before{
+
+    }
+
+    &__university::before {
+      width: 40px;
+      height: 35px;
+      background-image: url("../../img/university__icon__tablet.svg");
+    }
+
+    &__courses::before {
+      width: 40px;
+      height: 40px;
+      background-image: url("../../img/courses__icon__tablet.svg");
+    }
+  }
+}
+
+@media (min-width: 1220px) {
+  .institution {
+    padding-left: 85px;
+
+    &__university::before,
+    &__courses::before{
+      top: 1px;
+      left: 17px;
+    }
+
+    &__university::before {
+      width: 51px;
+      height: 45px;
+      background-image: url("../../img/university__icon__desktop.svg");
+    }
+
+    &__courses::before {
+      width: 50px;
+      height: 50px;
+      background-image: url("../../img/courses__icon__desktop.svg");
+    }
+  }
+
+  .institution--period {
+    font-size: 14px;
+  }
+
+  .institution--name {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 22px;
+  }
+
+  .institution__university {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .institution--specialization {
+    margin-top: 13px;
+    font-size: 18px;
   }
 }

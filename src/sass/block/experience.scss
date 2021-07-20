@@ -1,8 +1,36 @@
 .experience--list {
-  padding: 20px 26px 16px 83px;
   display: flex;
   flex-direction: column;
   gap: 14px;
   width: 320px;
   margin: 0 auto;
+  padding: 20px 26px 16px;
+}
+
+@media (min-width: 768px) {
+  .experience {
+    display: grid;
+    grid-template-columns: 238px 1fr;
+    margin: 0 auto;
+  }
+
+  .experience--list {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    gap: 32px;
+    width: auto;
+    margin: 0;
+    padding: 0 37px 38px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .experience {
+    grid-template-columns: 464px 1fr;
+  }
+
+  .experience--list {
+    gap: 44px;
+    padding: 0 53px 57px;
+  }
 }

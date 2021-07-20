@@ -2,9 +2,15 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
+  width: 320px;
   padding: 29px 31px 24px;
   margin: 0 auto;
-  width: 320px;
+  text-align: start;
+}
+
+.contacts--tittle {
+  margin-top: 31px;
+  background-color: $yellow;
 }
 
 .contacts--text {
@@ -38,5 +44,58 @@
     width: 19px;
     height: 14px;
     background-image: url("../../img/mail__icon.svg");
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    grid-column-start: 2;
+  }
+
+  .contacts--container {
+    gap: 2px;
+    padding: 22px 0 0px;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .contacts--tittle {
+    display: none;
+  }
+
+  .contacts--text {
+    padding-left: 22px;
+
+    &__place::before {
+      width: 10px;
+      height: 15px;
+      background-image: url("../../img/place__icon__tablet.svg");
+    }
+
+    &__phone::before {
+      width: 11px;
+      height: 14px;
+      background-image: url("../../img/phone__icon__tablet.svg");
+    }
+
+    &__mail::before {
+      width: 14px;
+      height: 10px;
+      background-image: url("../../img/mail__icon__tablet.svg");
+    }
+  }
+}
+
+@media (min-width: 1220px) {
+  .contacts {
+    position: relative;
+    bottom: 126px;
+    gap: 18px;
+    padding-left: 48px;
+  }
+
+  .contacts--container {
+    gap: 17px;
+    font-size: 17px;
   }
 }

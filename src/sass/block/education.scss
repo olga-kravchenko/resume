@@ -4,17 +4,63 @@
   gap: 20px;
   width: 320px;
   margin: 0 auto;
-  padding: 10px 24px 19px 29px;
+  padding: 10px 28px 19px;
 }
 
 .education--list {
   display: flex;
   flex-direction: column;
   gap: 11px;
-  padding-left: 48px;
   margin-top: 17px;
 }
 
 .education--subtitle {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .education {
+    display: grid;
+    grid-template-columns: 238px 1fr;
+    margin: 0 auto;
+  }
+
+  .education--container {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    gap: 15px;
+    width: auto;
+    margin: 0;
+    padding: 0 35px 33px;
+  }
+
+  .education--subtitle {
+    text-align: start;
+    font-size: 17px;
+  }
+
+  .education--list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .education {
+    grid-template-columns: 464px 1fr;
+  }
+
+  .education--container {
+    gap: 31px;
+  }
+
+  .education--subtitle {
+    font-size: 24px;
+  }
+
+  .education--list {
+    column-gap: 2px;
+    row-gap: 18px;
+  }
 }

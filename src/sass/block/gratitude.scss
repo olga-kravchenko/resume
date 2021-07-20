@@ -1,3 +1,10 @@
 .gratitude--tittle {
   background-color: $yellow;
 }
+
+@media (min-width: 768px) {
+  .gratitude--tittle {
+    padding-right: 0;
+    text-align: center;
+  }
+}
